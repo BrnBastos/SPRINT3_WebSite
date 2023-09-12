@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './componentes/Header/header';
+import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
+import Footer from './componentes/Footer/footer';
+
+
+const Body = styled.body`
+color: #18A4C3;
+background-color: #f5f5f5;
+min-width:700px;
+min-height:250px;
+max-width: 1920px;
+height:auto;
+margin:0 auto;
+`;
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'SuaFonte', sans-serif; /* Substitua 'SuaFonte' pelo nome da fonte */
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Body>
+        <Header/>
+        <GlobalStyle/>
+        <Footer/>
+      </Body>
   );
 }
 
