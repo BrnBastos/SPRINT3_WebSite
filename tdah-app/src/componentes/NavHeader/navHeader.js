@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from '../Images/image';
+import { Link } from 'react-router-dom';
 
 const OpcoesUl = styled.ul`
     font-size: 21px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     text-align: center;
     padding: 0 10px;
     font-weight: 400;
@@ -16,7 +17,6 @@ const TitleUl = styled.p`
     display: inline-flex;
     justify-content: center;
     text-align: center;
-    margin-right: 10vw;
     font-weight: bold;
     width:30%;
 `
@@ -36,8 +36,13 @@ const FlexDiv = styled.div`
     text-align: center;
     margin:0 auto;
 `
+const StyledLink = styled(Link)`
+  text-decoration: none; /* Remova o sublinhado */
+  color: inherit; /* Herde a cor do texto do elemento pai */
+  /* Adicione outros estilos desejados aqui */
+`;
 
-const navOptions = ['Home', 'TDAH', 'Contato', 'Sobre Nós', 'Login']
+const navOptions = ['Home', 'TDAH', 'Contato', 'Foco', 'Login']
 
 function NavHeader(){
     return(
@@ -47,9 +52,11 @@ function NavHeader(){
             <CursorP> <Logo/>COMPANY-NAME</CursorP>
         </TitleUl>
         <OpcoesUl className='opcoes' list-style="none">
-          {navOptions.map ((texto) =>(
-            <Opcoesli className='opcao' display="inline-block"><CursorP>{texto}</CursorP></Opcoesli>
-          ))}
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Home">Home</StyledLink></CursorP></Opcoesli>
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/TDAH">TDAH</StyledLink></CursorP></Opcoesli>
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Contato">Contato</StyledLink></CursorP></Opcoesli>
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Foco">Foco</StyledLink></CursorP></Opcoesli>
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Login">Login</StyledLink></CursorP></Opcoesli>
         </OpcoesUl>
         </FlexDiv>
     )
