@@ -24,14 +24,15 @@ function Home() {
   };
 
   return (
-    <div>
-        
+    <div><center>
       <h1>Bem-vindo à página inicial!</h1>
+      <p>Você está logado com sucesso.</p>
+      
       {usuarioAutenticado && (
         <button onClick={handleLogout}>Sair</button>
       )}
-      <p>Você está logado com sucesso.</p>
-    </div>
+
+    </center></div>
     
   );
 }

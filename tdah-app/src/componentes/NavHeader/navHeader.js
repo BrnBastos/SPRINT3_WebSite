@@ -49,7 +49,7 @@ function NavHeader(){
         <FlexDiv>
         <TitleUl>
            
-            <CursorP> <Logo/>COMPANY-NAME</CursorP>
+            <CursorP> <Logo/>TDAH-Connect</CursorP>
         </TitleUl>
         <OpcoesUl className='opcoes' list-style="none">
             <Opcoesli display="inline-block"><CursorP><StyledLink to="/Home">Home</StyledLink></CursorP></Opcoesli>

@@ -22,20 +22,27 @@ function Contato() {
         margin:0 auto;
         height: auto;
         display: flex;
-        margin-right: 20vw;
+        margin-right: 15vw;
     `
     const DivTextAbout = styled.div`
-        width:30%;
+        width:40%;
         margin:0 auto;
         display: inline-block;
         align-items: center;
         text-align: left;
         color: #777777;
     `
-    const TitleAbout = styled.h2`
+    const Title = styled.h2`
         font-weight: 600;
         align-items: center;
         text-align: left;
+        color: #18A4C3;
+        font-size:35px;
+    `
+    const TitleC = styled.h2`
+        font-weight: 600;
+        align-items: center;
+        text-align: center;
         color: #18A4C3;
         font-size:35px;
     `
@@ -45,12 +52,18 @@ function Contato() {
         height: 30px;
     `
 
+    const SecContato = styled.section`
+        width:85%;
+        margin:0 auto;
+        height: auto;
+    `
+
     return (
         <div>
             <DivSpace/><DivSpace/><DivSpace/>
             <SecAbout>
                 <DivTextAbout>
-                    <TitleAbout>Quem Somos</TitleAbout>
+                    <Title>Quem Somos</Title>
                     <p>
                         Quis at consequat, vitae sed integer dis. Cursus elementum purus velit integer integer id. Vel consequat egestas aliquam vitae diam sapien dolor habitant ipsum. Cursus in in volutpat at amet nulla ultrices. Consequat tristique egestas ultricies vel, ut viverra. Justo, interdum posuere ut lorem sit pharetra, vitae lobortis. Duis morbi id aliquam semper sapien. Lorem vestibulum a ut ut laoreet iaculis quis cursus.
                         
@@ -64,6 +77,17 @@ function Contato() {
                     <AboutImage/>
                 </div>
             </SecAbout>
+
+            <DivSpace/><DivSpace/>
+
+            <TitleC>Contate-Nos</TitleC>
+            <SecContato>
+            <h4> Bruno Silva Bastos  -- brunosbastos5@gmail.com</h4>
+            <h4> Gabriel Freitas -- gabrielmaradei2017@gmail.com</h4>
+            <h4> Guilherme Daher -- guidaher2004@gmail.com</h4>
+            <h4> Matheus Lucas -- matheus.lob1379@gmail.com</h4>
+            <h4> Número pra contato -  55 1198952-5531</h4>
+            </SecContato>
         </div>
     );
   }
