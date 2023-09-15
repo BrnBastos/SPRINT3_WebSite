@@ -90,6 +90,12 @@ function TDAH() {
                         A inquietação é um sintoma frequentemente associado à hiperatividade no TDAH. Ela se manifesta como uma sensação constante de inquietude física e mental. As pessoas com TDAH podem sentir a necessidade de estar sempre em movimento, mudando de posição frequentemente e incapazes de relaxar completamente. A inquietação pode causar desconforto e dificultar a concentração em tarefas que exigem tranquilidade.
                         </p>
                     </div>
+                    <div>
+                        <DivInline><h3>05.</h3><ColorBlack>Impulsividade</ColorBlack></DivInline>
+                        <p>
+                        A Impulsividade é sinônimo de dificuldade com autocontrole sendo bastante frequente encontrar pessoas agindo e se arrependendo posteriormente. Pois, mesmo tendo consciência do que é certo ou errado, adequado ou inconveniente, ainda assim agem de forma oposta ao que pensam.
+                        </p>
+                    </div>
                 </DivTopics1>
                 <DivTopics2>
                     <TdahImage/>
