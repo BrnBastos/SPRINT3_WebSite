@@ -26,7 +26,8 @@ const DivTopics1 = styled.div`
 
 const DivTopics2 = styled.div`
     display: inline-block;
-    margin:0 auto;
+    margin:auto;
+    margin-top: 100px;
 `
 
 const DivInline = styled.div`
@@ -61,32 +62,32 @@ function TDAH() {
     return (
         <div>
             <DivSpace/><DivSpace/>
-            <TextTdah>Entendendo o TDAH</TextTdah>
+            <TextTdah>Sintomas do TDAH</TextTdah>
             <DivSpace/>
             <SecContainer>
                 <DivTopics1>
                     <div>
                         <DivInline><h3>01.</h3><ColorBlack>Hiperatividade</ColorBlack></DivInline>
                         <p>
-                            Proin ipsum sed tincidunt ultricies a vitae aliquam quam. Malesuada hac viverra diam vitae. Aliquam, nec vitae vitae mi, mattis orci et leo. Hendrerit nisl metus orci enim. Sed.
+                        A hiperatividade é um dos principais sintomas do TDAH. Ela se manifesta em crianças e adultos como um excesso de movimento, agitação e inquietação. Pessoas com TDAH podem ter dificuldade em ficar paradas, frequentemente se levantando da cadeira, mexendo as mãos ou os pés e interrompendo outras pessoas. Essa agitação pode tornar desafiador o envolvimento em atividades que exigem tranquilidade, como sentar-se em uma sala de aula ou participar de reuniões.
                         </p>
                     </div>
                     <div>
                         <DivInline><h3>02.</h3><ColorBlack>Desvio de atenção</ColorBlack></DivInline>
                         <p>
-                            Proin ipsum sed tincidunt ultricies a vitae aliquam quam. Malesuada hac viverra diam vitae. Aliquam, nec vitae vitae mi, mattis orci et leo. Hendrerit nisl metus orci enim. Sed.
+                        O desvio de atenção é outro sintoma fundamental do TDAH. Isso se traduz em dificuldade em manter o foco em tarefas ou atividades por períodos prolongados. Pessoas com TDAH podem facilmente ser distraídas por estímulos externos, pensamentos intrusivos ou outros estímulos sensoriais. Isso pode afetar a capacidade de completar tarefas escolares, no trabalho ou em casa, e pode levar à procrastinação.
                         </p>
                     </div>
                     <div>
                         <DivInline><h3>03.</h3><ColorBlack>Hiperfoco</ColorBlack></DivInline>
                         <p>
-                            Proin ipsum sed tincidunt ultricies a vitae aliquam quam. Malesuada hac viverra diam vitae. Aliquam, nec vitae vitae mi, mattis orci et leo. Hendrerit nisl metus orci enim. Sed.
+                        Embora a falta de atenção seja um sintoma, algumas pessoas com TDAH também experimentam o fenômeno do hiperfoco. Isso ocorre quando uma pessoa com TDAH se concentra intensamente em uma atividade ou tarefa específica que é altamente interessante ou estimulante. Durante o hiperfoco, a pessoa pode dedicar horas a essa atividade, muitas vezes ignorando outras responsabilidades ou compromissos. Embora o hiperfoco possa ser produtivo, ele também pode ser prejudicial se levar ao descuido de outras áreas da vida.
                         </p>
                     </div>
                     <div>
                         <DivInline><h3>04.</h3><ColorBlack>Inquietação</ColorBlack></DivInline>
                         <p>
-                            Proin ipsum sed tincidunt ultricies a vitae aliquam quam. Malesuada hac viverra diam vitae. Aliquam, nec vitae vitae mi, mattis orci et leo. Hendrerit nisl metus orci enim. Sed.
+                        A inquietação é um sintoma frequentemente associado à hiperatividade no TDAH. Ela se manifesta como uma sensação constante de inquietude física e mental. As pessoas com TDAH podem sentir a necessidade de estar sempre em movimento, mudando de posição frequentemente e incapazes de relaxar completamente. A inquietação pode causar desconforto e dificultar a concentração em tarefas que exigem tranquilidade.
                         </p>
                     </div>
                 </DivTopics1>

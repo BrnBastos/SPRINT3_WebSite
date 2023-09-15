@@ -10,15 +10,6 @@ const LoginContainer = styled.div`
   height: 75vh;
 `;
 
-const LoginForm = styled.div`
-  background-color: #ffffffa2;
-  padding: 30px;
-  box-shadow: 3px 3px 1px 0px #00000060;
-  border-radius: 10px;
-  text-align: center;
-  width: 20vw;
-`;
-
 const Title = styled.h1`
   color: #18A4C3;
   font-size: 24px;
@@ -26,34 +17,35 @@ const Title = styled.h1`
 `;
 
 const InputField = styled.input`
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  border-bottom: 2px solid #18A4C3;
-  color: #18A4C3;
+    border-radius: 10px;
+    border: 1.5px solid #f5f5f5;
+    width: 422px;
+    height: 50px;
 
-  &::placeholder {
-    color: #18A4C3;
-  }
-`;
+    &:hover{
+      border: 1.5px solid #18A4C3;
+    }
+
+    &:focus {
+    outline: none;
+    border-color: #18A4C3;
+    }
+`
 
 const LoginButton = styled.button`
-  background-color: #18A4C3;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+    background-color: #FFF;
+    border: 1.5px solid #18A4C3;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    color: #777;
 
-  &:hover {
-    background-color: #127c8e;
-  }
+    &:hover{
+      border: 1.5px solid #18A4C3;
+      background-color: #18A4C3;
+      color: #f5f5f5;
+    }
 `;
 
 const ErrorMessage = styled.p`
@@ -75,6 +67,11 @@ const SignUpLink = styled.p`
   }
 `;
 
+const DivSpace = styled.div`
+  width: auto;
+  height:15px;
+`
+
 function Login() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -95,26 +92,27 @@ function Login() {
 
   return (
     <LoginContainer>
-      <LoginForm>
         <Title>Login</Title>
+        <DivSpace/>
         <InputField
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <DivSpace/>
         <InputField
           type="password"
           placeholder="Senha"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
         />
+        <DivSpace/>
         <LoginButton onClick={handleLogin}>Entrar</LoginButton>
         {erro && <ErrorMessage>{erro}</ErrorMessage>}
         <SignUpLink>
           Não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
         </SignUpLink>
-      </LoginForm>
     </LoginContainer>
   );
 }

@@ -125,7 +125,7 @@ const AddButton1 = styled.button`
 
   const DivSpace = styled.div`
     width: 100%;
-    height: 400px;
+    height: 100px;
   `
 
 function Focus() {
@@ -202,9 +202,19 @@ function Focus() {
     setNewEvent('');
   };
 
+  const HBlack = styled.h4`
+    color:black;
+    width:30%;
+  `
+
   return (
     <div>
+      <DivSpace/>
     <CenteredContainer>
+
+      <h1> Ferramentas de Foco </h1>
+      <HBlack>  Para ajudar pessoas diagnosticadas com o TDAH, nós criamos estas ferramentas para controlar suas tarefas e te ajudar no seu dia a dia  </HBlack>
+
       <h1>Lista de Tarefas</h1>
       <InputLine>
         <TaskInput
@@ -271,7 +281,7 @@ function Focus() {
       )}
     </CalendarContainer>
 
-    <DivSpace/>
+    <DivSpace/><DivSpace/><DivSpace/>
     </div>
     
   );

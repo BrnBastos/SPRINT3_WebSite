@@ -31,7 +31,7 @@ function Footer(){
         <FooterStyle>
             <FlexDivF>
                 <PaddingF>
-                    © 2023 COMPANY-NAME - Todos os direitos reservados
+                    © 2023 TDAH-Connect - Todos os direitos reservados
                 </PaddingF>
                 <PaddingF>
                     Desenvolvido por alunos da FIAP

@@ -27,10 +27,6 @@ function Home() {
     <div><center>
       <h1>Bem-vindo à página inicial!</h1>
       <p>Você está logado com sucesso.</p>
-      
-      {usuarioAutenticado && (
-        <button onClick={handleLogout}>Sair</button>
-      )}
 
     </center></div>
     

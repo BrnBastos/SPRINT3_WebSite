@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from '../Images/image';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const OpcoesUl = styled.ul`
     font-size: 21px;
@@ -42,9 +44,33 @@ const StyledLink = styled(Link)`
   /* Adicione outros estilos desejados aqui */
 `;
 
+const ButtonSair = styled.button`
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border-color: #18A4C3;
+
+    &:hover{
+        background-color:#18A4C3;
+        color:white;
+    }
+`
+
 const navOptions = ['Home', 'TDAH', 'Contato', 'Foco', 'Login']
 
+
 function NavHeader(){
+
+    const [usuarioAutenticado, setUsuarioAutenticado] = useState(JSON.parse(localStorage.getItem('usuario')));
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        // Limpar o LocalStorage e redirecionar para a página de login
+        localStorage.removeItem('usuario');
+        setUsuarioAutenticado(null);
+        navigate('/login');
+      };
+
     return(
         <FlexDiv>
         <TitleUl>
@@ -56,7 +82,9 @@ function NavHeader(){
             <Opcoesli display="inline-block"><CursorP><StyledLink to="/TDAH">TDAH</StyledLink></CursorP></Opcoesli>
             <Opcoesli display="inline-block"><CursorP><StyledLink to="/Contato">Contato</StyledLink></CursorP></Opcoesli>
             <Opcoesli display="inline-block"><CursorP><StyledLink to="/Foco">Foco</StyledLink></CursorP></Opcoesli>
-            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Login">Login</StyledLink></CursorP></Opcoesli>
+            <Opcoesli display="inline-block"><CursorP><StyledLink to="/Login">{usuarioAutenticado && (
+        <ButtonSair onClick={handleLogout}>Sair</ButtonSair>
+      )}</StyledLink></CursorP></Opcoesli>
         </OpcoesUl>
         </FlexDiv>
     )

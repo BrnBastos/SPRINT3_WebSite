@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 function Cadastro() {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-
   const handleCadastro = () => {
+    // Obter os valores dos campos diretamente dos elementos HTML
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
     // Aqui você pode realizar a validação dos dados, como garantir que os campos não estão vazios
     if (!nome || !email || !senha) {
       alert('Por favor, preencha todos os campos.');
@@ -21,32 +23,76 @@ function Cadastro() {
     window.location.href = '/login';
   };
 
+  const InputC = styled.input`
+    border-radius: 10px;
+    border: 1.5px solid #f5f5f5;
+    width: 422px;
+    height: 50px;
+
+    &:hover{
+      border: 1.5px solid #18A4C3;
+    }
+
+    &:focus {
+    outline: none;
+    border-color: #18A4C3;
+  }
+  `
+  const BtnCadastro = styled.button` 
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1.5px solid #18A4C3;
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+    color: #777;
+
+    &:hover{
+      border: 1.5px solid #18A4C3;
+      background-color: #18A4C3;
+      color: #f5f5f5;
+    }
+  `
+  const DivInline = styled.div`
+    display: block;
+    width:450px;
+    padding: 100px 0px;
+  `
+  const DiviSpace = styled.div`
+    width:auto;
+    height:15px;
+  `
+
   return (
     <div>
-     <center>
-      <h1>Cadastro</h1>
-      <input
-        type="text"
-        placeholder="Nome"
-        value={nome}
-        onChange={(e) => setNome(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Senha"
-        value={senha}
-        onChange={(e) => setSenha(e.target.value)}
-      />
-      <button onClick={handleCadastro}>Cadastrar</button>
-      <p>
-        Já possui uma conta? <Link to="/login">Faça o login</Link>
-      </p>
+      <center>
+        <DivInline>
+          <h1>Cadastro</h1>
+          <DiviSpace/>
+          <InputC
+            id="nome"
+            type="text"
+            placeholder="Nome"
+          />
+          <DiviSpace/>
+          <InputC
+            id="email"
+            type="email"
+            placeholder="Email"
+          />
+          <DiviSpace/>
+          <InputC
+            id="senha"
+            type="password"
+            placeholder="Senha"
+          />
+          <DiviSpace/>
+          <BtnCadastro onClick={handleCadastro}>Cadastrar</BtnCadastro>
+          <DiviSpace/>
+          <p>
+            Já possui uma conta? <Link to="/login">Faça o login</Link>
+          </p>
+        </DivInline>
       </center>
     </div>
   );
