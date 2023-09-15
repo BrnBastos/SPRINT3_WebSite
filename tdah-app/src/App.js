@@ -38,7 +38,7 @@ function App() {
               <Route path='/Home' element={<div><Header /><Home/><Footer /></div>} />
               <Route path='/Login' element={<div><Header /><Login/><Footer /></div>} />
               <Route path='/Cadastro' element={<div><Header /><Cadastro/><Footer /></div>} />
-              <Route path='/TDAH' element={<div><Header /><TDAH/><Footer /></div>} />
+              <Route path='/TDAH' element={<div><Header/><TDAH/><Footer/></div>} />
               <Route path='/Foco' element={<div><Header /><Focus/><Footer /></div>} />
               <Route path='/Contato' element={<div><Header /><Contato/><Footer /></div>} />
             </Routes>

@@ -23,6 +23,7 @@ function Cadastro() {
 
   return (
     <div>
+     <center>
       <h1>Cadastro</h1>
       <input
         type="text"
@@ -46,6 +47,7 @@ function Cadastro() {
       <p>
         Já possui uma conta? <Link to="/login">Faça o login</Link>
       </p>
+      </center>
     </div>
   );
 }

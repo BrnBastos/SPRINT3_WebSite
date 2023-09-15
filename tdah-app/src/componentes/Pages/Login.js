@@ -21,6 +21,7 @@ function Login() {
 
   return (
     <div>
+     <center>
       <h1>Login</h1>
       <input
         type="email"
@@ -39,6 +40,7 @@ function Login() {
       <p>
         Não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
       </p>
+      </center>
     </div>
   );
 }

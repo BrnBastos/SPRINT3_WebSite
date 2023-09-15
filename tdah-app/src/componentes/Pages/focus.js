@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Validation() {
-  const navigate = useNavigate();
 
-  useEffect(() => {
+
+function Focus() {
+
+    const navigate = useNavigate();
+
+     useEffect(() => {
     // Verificar a autenticação aqui (por exemplo, verificar se o usuário está no LocalStorage)
     const usuarioAutenticado = JSON.parse(localStorage.getItem('usuario'));
 
@@ -15,10 +18,9 @@ function Validation() {
       navigate('/Login');
     }
   }, [navigate]);
-}
 
-function Focus() {
     return (
+        
         <div>
             <h1>Login Page</h1>
             {/* Adicione um botão que redireciona para a página de login */}
@@ -29,4 +31,4 @@ function Focus() {
     );
   }
   
-  export default Focus && Validation;
+  export default Focus;

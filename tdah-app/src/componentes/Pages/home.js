@@ -25,12 +25,14 @@ function Home() {
 
   return (
     <div>
+        
       <h1>Bem-vindo à página inicial!</h1>
       {usuarioAutenticado && (
         <button onClick={handleLogout}>Sair</button>
       )}
       <p>Você está logado com sucesso.</p>
     </div>
+    
   );
 }
 
