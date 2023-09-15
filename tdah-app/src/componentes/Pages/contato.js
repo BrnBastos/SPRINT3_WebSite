@@ -65,12 +65,12 @@ function Contato() {
                 <DivTextAbout>
                     <Title>Quem Somos</Title>
                     <p>
-                        Quis at consequat, vitae sed integer dis. Cursus elementum purus velit integer integer id. Vel consequat egestas aliquam vitae diam sapien dolor habitant ipsum. Cursus in in volutpat at amet nulla ultrices. Consequat tristique egestas ultricies vel, ut viverra. Justo, interdum posuere ut lorem sit pharetra, vitae lobortis. Duis morbi id aliquam semper sapien. Lorem vestibulum a ut ut laoreet iaculis quis cursus.
+                        O TDAH-Connect é um projeto realizado pelos alunos da Fiap e conjunto com a IBM, visando o tema de cidades sustentáveis, criamos esse projeto para melhorar a qualidade de vida de pessoas com TDAH assim amenizando suas dificuldades diárias.
                         
                     </p>
                     <br/>
                     <p>
-                        Phasellus consequat mollis sed nulla morbi pharetra. Arcu nam amet commodo ut tortor, aliquam est. Ut sit habitant morbi consectetur non tristique accumsan malesuada volutpat. Nulla sit eu lobortis arcu egestas faucibus. Elementum tincidunt nulla aliquet maecenas ut diam egestas leo euismod. Quam viverra egestas dolor et at tempus ut diam. Molestie neque enim sed iaculis suspendisse cursus sit sem eget. Orci erat amet scelerisque tortor nam mauris nisl pulvinar. Sit massa consequat, sed quam.
+                        O intuito prioritário do projeto é que sirva de pilar ao aprendizado e conhecimento, fluindo-se totalmente contra os preconceitos e estigmas remanescentes, que ainda atingem e assolam uma parte muito considerável da população brasileira. Quanto maior visibilidade sobre nossas iniciativas, maior o número de tratamentos precoces e cada vez menos impasses sociais negativos.​
                     </p>
                 </DivTextAbout>
                 <div>
@@ -82,6 +82,7 @@ function Contato() {
 
             <TitleC>Contate-Nos</TitleC>
             <SecContato>
+            <h3> Desenvolvedores:</h3>
             <h4> Bruno Silva Bastos  -- brunosbastos5@gmail.com</h4>
             <h4> Gabriel Freitas -- gabrielmaradei2017@gmail.com</h4>
             <h4> Guilherme Daher -- guidaher2004@gmail.com</h4>
