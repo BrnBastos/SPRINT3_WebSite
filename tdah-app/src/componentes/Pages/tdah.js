@@ -96,6 +96,12 @@ function TDAH() {
                         A Impulsividade é sinônimo de dificuldade com autocontrole sendo bastante frequente encontrar pessoas agindo e se arrependendo posteriormente. Pois, mesmo tendo consciência do que é certo ou errado, adequado ou inconveniente, ainda assim agem de forma oposta ao que pensam.
                         </p>
                     </div>
+                    <div>
+                        <DivInline><h3>06.</h3><ColorBlack>Desenvolvimento de outros transtornos e condições</ColorBlack></DivInline>
+                        <p>
+                        Pessoas com TDAH têm maior probabilidade de desenvolver outras doenças e condições, incluindo ansiedade, depressão, transtorno obsessivo-compulsivo (TOC) e até abuso de substâncias. O mais comum deles é o transtorno desafiador de oposição (TDO), que está presente em até 41% dos casos de TDAH.
+                        </p>
+                    </div>
                 </DivTopics1>
                 <DivTopics2>
                     <TdahImage/>
