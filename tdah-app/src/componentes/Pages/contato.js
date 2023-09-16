@@ -65,7 +65,7 @@ function Contato() {
                 <DivTextAbout>
                     <Title>Quem Somos</Title>
                     <p>
-                        O TDAH-Connect é um projeto realizado pelos alunos da Fiap e conjunto com a IBM, visando o tema de cidades sustentáveis, criamos esse projeto para melhorar a qualidade de vida de pessoas com TDAH assim amenizando suas dificuldades diárias.
+                    O TDAH-Connect é um projeto realizado pelos alunos da FIAP em conjunto à IBM, voltado ao tema de cidades sustentáveis. Criamos este projeto para assegurar uma melhora na qualidade de vida de todos os usuários em quesitos de saúde e conhecimento. Nosso site não é restrito apenas aos cidadãos com o transtorno, ele também é destinado a outros públicos que buscam se informar e aprimorar seu intelecto sobre o assunto. Com isso, esperamos que com todas as ferramentas contidas, as dificuldades diárias durante a execução de tarefas sejam reduzidas e suas performances melhoradas. 
                         
                     </p>
                     <br/>
@@ -87,7 +87,7 @@ function Contato() {
             <h4> Gabriel Freitas -- gabrielmaradei2017@gmail.com</h4>
             <h4> Guilherme Daher -- guidaher2004@gmail.com</h4>
             <h4> Matheus Lucas -- matheus.lob1379@gmail.com</h4>
-            <h4> Número pra contato -  55 1198952-5531</h4>
+            <h4> Número para contato -  55 1198952-5531</h4>
             </SecContato>
         </div>
     );
