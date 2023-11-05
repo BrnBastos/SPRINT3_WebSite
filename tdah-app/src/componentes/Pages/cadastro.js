@@ -90,7 +90,7 @@ function Cadastro() {
           <BtnCadastro onClick={handleCadastro}>Cadastrar</BtnCadastro>
           <DiviSpace/>
           <p>
-            Já possui uma conta? <Link to="/login">Faça o login</Link>
+            <span className='paragrafoCinza'>Já possui uma conta?</span> <Link to="/login">Faça o login</Link>
           </p>
         </DivInline>
       </center>

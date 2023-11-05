@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const FooterStyle = styled.footer`
     color: black;
+    display: flex;
     background-color:#FFF;
     justify-content: center;
     text-align: center;
@@ -19,12 +20,13 @@ const FlexDivF = styled.footer`
     align-items: center;
 `
 const PaddingF = styled.h4`
+    display: flex;
     padding:0 6vw;
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 20px;
 `
-
 
 function Footer(){
     return(

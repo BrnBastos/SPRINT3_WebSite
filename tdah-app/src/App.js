@@ -10,7 +10,7 @@ import TDAH from './componentes/Pages/tdah';
 import Cadastro from './componentes/Pages/cadastro';
 import Contato from './componentes/Pages/contato';
 import Focus from './componentes/Pages/focus';
-
+import './styles/Styles.css';
 
 const Body = styled.body`
 color: #18A4C3;

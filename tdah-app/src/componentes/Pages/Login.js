@@ -111,7 +111,7 @@ function Login() {
         <LoginButton onClick={handleLogin}>Entrar</LoginButton>
         {erro && <ErrorMessage>{erro}</ErrorMessage>}
         <SignUpLink>
-          Não possui uma conta? <Link to="/cadastro">Cadastre-se</Link>
+          <span className='paragrafoCinza'>Não possui uma conta?</span> <Link to="/cadastro">Cadastre-se</Link>
         </SignUpLink>
     </LoginContainer>
   );

@@ -1,0 +1,16 @@
+$corMsgCadastroLogin: grey;
+$width-carrossel: 700px;
+$height-carrosel: 470px;
+
+.paragrafoCinza{
+    color: $corMsgCadastroLogin;
+}
+
+.divCarrosel{
+    padding: 20px 0px;
+}
+
+.tamanhoImgCarrosel{
+    width: $width-carrossel;
+    height: $height-carrosel;
+}
