@@ -1,3 +1,10 @@
+.headerPag {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background-color: #FFF;
+}
+
 .paragrafoCinza {
   color: grey;
 }
@@ -34,7 +41,6 @@ input {
 }
 
 .form-control {
-  padding-top: 200px;
-  margin: 15px 0px;
+  margin: 20px 0px;
   text-align: center;
 }/*# sourceMappingURL=Styles.css.map */

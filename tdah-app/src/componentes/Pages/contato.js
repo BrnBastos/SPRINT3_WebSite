@@ -88,8 +88,8 @@ function Contato() {
                         O intuito prioritário do projeto é que sirva de pilar ao aprendizado e conhecimento, fluindo-se totalmente contra os preconceitos e estigmas remanescentes, que ainda atingem e assolam uma parte muito considerável da população brasileira. Quanto maior visibilidade sobre nossas iniciativas, maior o número de tratamentos precoces e cada vez menos impasses sociais negativos.​
                     </p>
                 </DivTextAbout>
-                <div>
-                    <AboutImage className='imgContato'/>
+                <div className='imgContato'>
+                    <AboutImage/>
                 </div>
             </SecAbout>
 
@@ -128,12 +128,13 @@ function Contato() {
             </div>
 
             <SecContato>
-            <h3> Desenvolvedores:</h3>
-            <p> Bruno Silva Bastos  -- brunosbastos5@gmail.com</p>
-            <p> Gabriel Freitas -- gabrielmaradei2017@gmail.com</p>
-            <p> Guilherme Daher -- guidaher2004@gmail.com</p>
-            <p> Matheus Lucas -- matheus.lob1379@gmail.com</p>
-            <p> Número para contato -  55 1198952-5531</p>
+                <h3> Desenvolvedores:</h3>
+                <p> Bruno Silva Bastos  -- brunosbastos5@gmail.com</p>
+                <p> Gabriel Freitas -- gabrielmaradei2017@gmail.com</p>
+                <p> Guilherme Daher -- guidaher2004@gmail.com</p>
+                <p> Lucas Vassão -- lucasvbraga@gmail.com</p>
+                <p> Matheus Lucas -- matlucaas@gmail.com</p>
+                <p> Número para contato -  55 1198952-5531</p>
             </SecContato>
         </div>
     );

@@ -45,6 +45,11 @@ function Home() {
 
   return (
     <div><center>
+      <h1 style={{padding: '15px 0px 0px'}}>Bem-vindo à página inicial!</h1>
+      <p>Você está logado com sucesso.</p>
+      <p>Sinta-se livre para acessar nosso conteúdo</p>
+      <p>no menu acima!</p>
+
       <div className='divCarrosel'>
         <Carousel activeIndex={index} onSelect={handleSelect} data-bs-theme="dark">
           {data.map((slide, i) => {
@@ -65,11 +70,6 @@ function Home() {
           
         </Carousel>
       </div>
-      <h1>Bem-vindo à página inicial!</h1>
-      <p>Você está logado com sucesso.</p>
-      <p>Sinta-se livre para acessar nosso conteúdo</p>
-      <p>no menu acima!</p>
-
     </center></div>
     
   );

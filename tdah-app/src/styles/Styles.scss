@@ -3,6 +3,13 @@ $width-carrossel: 700px;
 $height-carrosel: 470px;
 $paddingImgs: 20px 0px;
 
+.headerPag{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+}
+
 .paragrafoCinza{
     color: $corMsgCadastroLogin;
 }
@@ -39,7 +46,6 @@ box-sizing: border-box;
 }
 
 .form-control {
-    padding-top: 200px;;
-    margin: 15px 0px;
+    margin: $paddingImgs;
     text-align: center;
 }
