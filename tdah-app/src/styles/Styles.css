@@ -9,4 +9,32 @@
 .tamanhoImgCarrosel {
   width: 700px;
   height: 470px;
+}
+
+.textoJustificado {
+  text-align: justify;
+}
+
+.imgContato {
+  padding-left: 20px;
+}
+
+.containerContateNos {
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-control {
+  padding-top: 200px;
+  margin: 15px 0px;
+  text-align: center;
 }/*# sourceMappingURL=Styles.css.map */

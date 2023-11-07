@@ -1,16 +1,45 @@
 $corMsgCadastroLogin: grey;
 $width-carrossel: 700px;
 $height-carrosel: 470px;
+$paddingImgs: 20px 0px;
 
 .paragrafoCinza{
     color: $corMsgCadastroLogin;
 }
 
 .divCarrosel{
-    padding: 20px 0px;
+    padding: $paddingImgs;
 }
 
 .tamanhoImgCarrosel{
     width: $width-carrossel;
     height: $height-carrosel;
+}
+
+.textoJustificado{
+    text-align: justify;
+}
+
+.imgContato{
+    padding-left: 20px;
+}
+
+.containerContateNos {
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+input {
+padding: 8px;
+width: 100%;
+box-sizing: border-box;
+}
+
+.form-control {
+    padding-top: 200px;;
+    margin: 15px 0px;
+    text-align: center;
 }
