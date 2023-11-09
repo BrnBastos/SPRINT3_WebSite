@@ -16,7 +16,7 @@ const data = [
 ]
 // Fim seção carrosel
 function Home() {
-
+  const usuarioSalvo = JSON.parse(localStorage.getItem('usuario'));
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -44,8 +44,8 @@ function Home() {
   };
 
   return (
-    <div><center>
-      <h1 style={{padding: '15px 0px 0px'}}>Bem-vindo à página inicial!</h1>
+    <><center>
+      <h1 className='bemVindo'>Bem-vindo à página inicial {usuarioSalvo.nome}!</h1>
       <p>Você está logado com sucesso.</p>
       <p>Sinta-se livre para acessar nosso conteúdo</p>
       <p>no menu acima!</p>
@@ -70,7 +70,7 @@ function Home() {
           
         </Carousel>
       </div>
-    </center></div>
+    </center></>
     
   );
 }
