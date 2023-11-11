@@ -10,6 +10,7 @@ import TDAH from './componentes/Pages/tdah';
 import Cadastro from './componentes/Pages/cadastro';
 import Contato from './componentes/Pages/contato';
 import Focus from './componentes/Pages/focus';
+import HeaderSemNav from './componentes/Header/headerSemNav';
 import './styles/Styles.css';
 
 const Body = styled.body`
@@ -34,10 +35,10 @@ function App() {
         <GlobalStyle/>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<div><Header /><Login/><Footer /></div>} />
+              <Route path='/' element={<div><HeaderSemNav /><Login/><Footer /></div>} />
               <Route path='/Home' element={<div><Header /><Home/><Footer /></div>} />
-              <Route path='/Login' element={<div><Header /><Login/><Footer /></div>} />
-              <Route path='/Cadastro' element={<div><Header /><Cadastro/><Footer /></div>} />
+              <Route path='/Login' element={<div><HeaderSemNav /><Login/><Footer /></div>} />
+              <Route path='/Cadastro' element={<div><HeaderSemNav /><Cadastro/><Footer /></div>} />
               <Route path='/TDAH' element={<div><Header/><TDAH/><Footer/></div>} />
               <Route path='/Foco' element={<div><Header /><Focus/><Footer /></div>} />
               <Route path='/Contato' element={<div><Header /><Contato/><Footer /></div>} />
